@@ -4,15 +4,17 @@
 	<title></title>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <style type="text/css">
 body{
 	margin: 0;
 	
 }
 body{
-	position: ;
+	position: absolute;
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: absolute;
 }
 
 	header{
@@ -20,12 +22,12 @@ body{
 		background-color: black;
 		height: 60px;
 		position: fixed;
-		
-z-index:1;
+		z-index:1;
 	}
 	a{
 		color: white;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: normal;
 		font-size: 20px;
 		padding-right: 90px;
 		display: inline-block;
@@ -33,22 +35,26 @@ z-index:1;
 		text-decoration:none;
 	
 	}
+	a:hover{
+		opacity: 0.6;
+	}
 	img{
 		width: 150px;
 		margin-top: 10px;
 		float: left;
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 	.banner{
 		width: 100%;
 		height: 100%;
 		margin: 0;
+		
 
 	}
 	.banner2{
-		background-color: #494949;
+		background-color: #ffff;
 		width: 100%;
-		height: 1100px;
+		height: 1600px;
 	}
 	h1{
 		position: absolute;
@@ -58,7 +64,8 @@ z-index:1;
 	top: 100px;
 	color:#ffff;
 	font-size: 100px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif, Bold;
+	font-style: bold;
 	}
 	p{
 	position: absolute;
@@ -68,34 +75,172 @@ z-index:1;
 	top: 150px;
 	color:#ffff;
 	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	}
+	font-family: 'Montserrat', sans-serif;
+}
 	.pdois{
 position: absolute;
 width: 84px;
 height: 30px;
-left: 390px;
+left: 425px;
 top: 330px;
-
-font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
-font-weight: bold;
-font-size: 24px;
+font-size: 28px;
 line-height: normal;
 color: #fff;
-	}
+z-index:1;
+font-weight: bold;
+}
 
 .bk{
-position: absolute;
+position:absolute;
 width: 150px;
 height: 65px;
-left: 345px;
-top: 315px;
-background-color: black;
-
-
-
+left: 385px;
+top: 310px;
+border:5px solid #000000;
+z-index:1;
 	}
+	.bk:hover{
+		background-color: black;
+		width: 150px;
+		height: 65px;
+		color: white;
+	}
+
+	.pricipais{
+		position: absolute;
+width: 255px;
+height: 43px;
+left: 535px;
+top: 780px;
+text-align: center;
+white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: normal;
+color: #000000;
+	}
+/* Rectangle */
+.um{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 138px;
+top: 900px;
+background: url(img/album2.png);
+
+}
+.dois{
+	position: absolute;
+width: 364px;
+height: 364px;
+left: 501px;
+top: 900px;
+background: url(img/album1.png);
+}
+.tres{
+position: absolute;
+width: 363px;
+height: 364px;
+left: 865px;
+top: 900px;
+background: url(img/album3.png);
+}
+
+
+.text:hover{
+	opacity: 1;
+}
+.text {
+	color: white;
+
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+	font-family: 'Montserrat', sans-serif, Bold;
+  	opacity: 0;
+  }
+  .overlay {
+	position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  transition: .5s ease;
+                  background-color: #000;
+                }
+
+.um:hover .overlay {
+        opacity: 0.8;
+    }
+	.dois:hover .overlay {
+        opacity: 0.8;
+    }
+	.tres:hover .overlay {
+        opacity: 0.8;
+    }
+
+@media only screen and (max-device-width: 640px){
+	.um{
+		position: absolute;
+	
+		width: 500px;
+height: 500px;
+left: 250px;
+top: 700px;
+background-size: cover;
+	background-repeat: no-repeat;
+	}
+}
+@media only screen and (max-device-width: 640px){
+	.dois{
+		position: absolute;
+	
+width: 500px;
+height: 500px;
+left: 250px;
+top: 1200px;
+background-size: cover;
+	background-repeat: no-repeat;
+	}
+	.pricipais{
+		white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+top: 580px;
+left: 35%;
+	}
+	.banner2{
+		background-color: #ffff;
+		width: 100%;
+		height: 3000px;
+	}
+}
+@media only screen and (max-device-width: 640px){
+	.tres{
+		position: absolute;
+	
+width: 500px;
+height: 500px;
+left: 250px;
+top: 1700px;
+background-size: cover;
+	background-repeat: no-repeat;
+	}
+}	
 
 </style>
 <body>
@@ -119,7 +264,31 @@ background-color: black;
 	<h1> one-sided love</h1>
 	<img src="img/background.png" class="banner" >
 </div>
-	<a href="https://youtu.be/j9neoRvCi3I" class="pdois">Ouça</a>
-<div class="banner2" id="historia">História</div>
+	<a href="https://youtu.be/j9neoRvCi3I" class="pdois">Ouvir</a>
+
 </div>
+
+<!-- aaaa -->
+<div class="banner2">
+	<h1 class="pricipais">Principais Álbuns</h1>
+
+<div class="um"> <a href=""></a>
+		<div class="overlay"></div>
+		<div class="text"> Digital Druglord</div>
+		</div>
+	</div>
+	<!-- aaa -->
+	<div class="dois">
+			<div class="overlay">
+			  <div class="text">Deadroses</div>
+			</div>
+		</div>
+		<!-- asss -->
+
+		<div class="tres">
+				<div class="overlay">
+				  <div class="text">Deadroses</div>
+				</div>
+			</div>
+		</div>
 </html>
