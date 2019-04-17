@@ -6,18 +6,17 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <style type="text/css">
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin: 0;
 	background-size: auto;
-	
-	
-}
-body{
-	position: absolute;
 	background-size: cover;
 	background-repeat: no-repeat;
-
+position: relative;
 background-size: contain;
+
 }
 
 	header{
@@ -26,6 +25,7 @@ background-size: contain;
 		height: 60px;
 		position: fixed;
 		z-index:1;
+		-webkit-overflow-scrolling: touch;
 	}
 	a{
 		color: white;
@@ -47,6 +47,13 @@ background-size: contain;
 		float: left;
 		margin-left: 20px;
 	}
+	.spotify{
+		width: 30px;
+		float: right;
+		margin-top: 12px;
+		margin-right: -35px
+		
+	}
 	.banner{
 		width: 100%;
 		height: 100%;
@@ -56,8 +63,12 @@ background-size: contain;
 	.banner2{
 		background-color: #ffff;
 		width: 100%;
-		height: 1600px;
-		
+		height: 1750px;
+	}
+	.banner3{
+		background-color: #000;
+		width: 100%;
+		height: 1000px;
 	}
 	h1{
 		position: absolute;
@@ -92,10 +103,32 @@ font-style: normal;
 font-size: 28px;
 line-height: normal;
 color: #fff;
-z-index:1;
+z-index:0;
 font-weight: bold;
 }
-
+.biografia{
+	position: absolute;
+width: 255px;
+height: 43px;
+left: 560px;
+top: 1800px;
+text-align: center;
+white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: normal;
+color: #ffff;
+}
+.black{
+	position: absolute;
+width: 1000px;
+left: 190px;
+top: 1900px;
+text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
 .bk{
 position:absolute;
 width: 150px;
@@ -103,7 +136,7 @@ height: 65px;
 left:100px;
 top: 310px;
 border:5px solid #000000;
-z-index:1;
+z-index:0;
 	}
 	.bk:hover{
 		background-color: black;
@@ -133,7 +166,7 @@ position:absolute;
 width: 363px;
 height: 364px;
 left: 138px;
-top: 900px;
+top: 940px;
 background: url(img/album2.png);
 
 }
@@ -142,7 +175,7 @@ background: url(img/album2.png);
 width: 364px;
 height: 364px;
 left: 501px;
-top: 900px;
+top: 940px;
 background: url(img/album1.png);
 }
 .tres{
@@ -150,11 +183,33 @@ position:absolute;
 width: 363px;
 height: 364px;
 left: 865px;
-top: 900px;
+top: 940px;
 background: url(img/album3.png);
 }
-
-
+.quatro{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 138px;
+top: 1304px;
+background: url(img/album4.png);
+}
+.cinco{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 501px;
+top: 1304px;
+background: url(img/album5.png);
+}
+.seis{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 865px;
+top: 1304px;
+background: url(img/album6.png);
+}
 .text:hover{
 	opacity: 1;
 }
@@ -194,7 +249,17 @@ background: url(img/album3.png);
 	.tres:hover .overlay {
         opacity: 0.8;
     }
+	.quatro:hover .overlay {
+        opacity: 0.8;
+	}
 
+	.cinco:hover .overlay {
+        opacity: 0.8;
+	}
+
+	.seis:hover .overlay {
+        opacity: 0.8;
+    }
 @media only screen and (max-device-width: 640px){
 	.um{
 		position: absolute;
@@ -209,8 +274,7 @@ background-size: cover;
 }
 @media only screen and (max-device-width: 640px){
 	.dois{
-		position: absolute;
-	
+position: absolute;
 width: 500px;
 height: 500px;
 left: 250px;
@@ -219,8 +283,7 @@ background-size: cover;
 	background-repeat: no-repeat;
 	}
 	.tres{
-	position: absolute;
-	
+position: absolute;
 width: 500px;
 height: 500px;
 left: 250px;
@@ -228,13 +291,40 @@ top: 1200px;
 background-size: cover;
 	background-repeat: no-repeat;
 }
+.quatro{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 2200px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.cinco{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 2700px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.seis{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 3200px;
+background-size: cover;
+background-repeat: no-repeat;
+}
 	.pricipais{
 		white-space: nowrap;
 font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 38px;
-top: 580px;
+margin-top: -160px;
 left: 35%;
 	}
 	.banner2{
@@ -242,6 +332,27 @@ left: 35%;
 		width: 100%;
 		height: 3000px;
 	}
+	.banner3{
+		background-color: #000;
+		width: 100%;
+		height: 600px;
+		margin: 0;
+		margin-top:800px;
+	}
+	.black{
+	position: absolute;
+width: 500px;
+
+left: 250px;
+top: 3900px;
+text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.biografia{
+	top: 3800px;
+	left: 360px;
+}
+
 	.text:hover{
 	opacity: 1;
 }
@@ -299,19 +410,28 @@ background-size: cover;
 
 @media only screen and (max-device-width: 1360px){
 	
-	
+	}
+}
+@media only screen and (max-device-width: 1503px){
+.pricipais{
+	margin-top: 860px;
+}
+
 }	
 
+
 </style>
-<body>
+<body >
  <header>
-			<img src="img/logopagina.png" width="">
+			<img src="img/logopagina.png" id="#home" width=""  >
+		
+			<a href="spotify:artist:2cFrymmkijnjDg9SS92EPM"><img src="img/spotify-logo (2).png" alt="" class="spotify">	</a>
         <nav>
             <ul>
                 <a href="#historia">Músicas</a>
-                <a href="">História</a>
-                <a href="">Álbum</a>
-                <a href="">Home</a>
+                <a href="">Biografia</a>
+                <a href="#historia">Álbum</a>
+                <a href="#home">Home</a>
             </ul>
         </nav>
     </header>
@@ -330,7 +450,7 @@ background-size: cover;
 
 <!-- aaaa -->
 <div class="banner2">
-	<h1 class="pricipais">Principais Álbuns</h1>
+	<h1 class="pricipais" id="historia">Principais Álbuns</h1>
 
 <div class="um"> <a href=""></a>
 		<div class="overlay"></div>
@@ -347,8 +467,38 @@ background-size: cover;
 
 		<div class="tres">
 				<div class="overlay">
-				  <div class="text">Deadroses</div>
+				  <div class="text">Cybersex</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="quatro">
+			<div class="overlay">
+			  <div class="text">Help</div>
+			</div>
+		</div>
+
+		<div class="cinco">
+			<div class="overlay">
+			  <div class="text">Drink Bleach</div>
+			</div>
+		</div>
+
+		<div class="seis">
+			<div class="overlay">
+			  <div class="text">Dead</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- fecha div -->
+	<!-- abre div -->
+	<div class="banner3">
+		<h1 class="biografia">Biografia</h1>
+		<p class="black">BlackBear anteriormente conhecido como Mat musto. Em 2011, Mat decidiu tomar “BlackBear” de apelido para pseudônimo. Ele tem músicas com Nylo, Mike Posner,Tyler Carter, James Blacke, Matt Thiessen, T Mills, JUSTICE league, Mod Sun, Lil Richid, Bei Maejor, entre outros. Ele também é produtor e compositor, com isso ele co-escreveu uma das músicas mais conhecidas, a Boyfriend de Justin Bieber.
+			Seu nome verdadeiro é Matthew Tyler Musto. Ele nasceu dia 27 de novembro de 1990, na cidade de Pittston (EUA). Ele possui 3 irmãos TJ Musto, James e Jade,sendo Matthew  o mais velho. Sua mãe se chama Lisa Musto e seu pai se chama Tom Musto, porém seus pais são separados, atualmente seu pai Tom é casado com Kimberly Musto. Matthew tem 1,69 de altura.
+		</p>
+
+
+	</div>
 </html>
