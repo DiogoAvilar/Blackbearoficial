@@ -1,0 +1,522 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	background-size: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+position: relative;
+background-size: contain;
+
+}
+
+	header{
+		width: 100%;
+		background-color: black;
+		height: 60px;
+		position: fixed;
+		z-index:1;
+		-webkit-overflow-scrolling: touch;
+	}
+	a{
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: normal;
+		font-size: 20px;
+		padding-right: 60px;
+		display: inline-block;
+		float: right;
+		text-decoration:none;
+	
+	}
+	a:hover{
+		opacity: 0.6;
+	}
+	img{
+		width: 150px;
+		margin-top: 10px;
+		float: left;
+		margin-left: 20px;
+	}
+	.spotify{
+		width: 30px;
+		float: right;
+		margin-top: 12px;
+		margin-right: -45px;
+		padding-left: 5px;
+		
+	}
+	.deezer{
+		width: 30px;
+		float: right;
+		margin-top: 12px;
+		margin-right: -5px;
+		
+	}
+	
+
+	.banner{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		background-size: auto;
+	}
+	.banner2{
+		background-color: #ffff;
+		width: 100%;
+		height: 1750px;
+	}
+	.banner3{
+		background-color: #000;
+		width: 100%;
+		height: 500px;
+	}
+	.banner4{
+		background-color: #ffff;
+		width: 100%;
+		height: 650px;
+	}
+	
+	h1{
+		position: absolute;
+	width: 539px;
+	height: 415px;
+	left: 100px;
+	top: 100px;
+	color:#ffff;
+	font-size: 100px;
+	font-family: 'Montserrat', sans-serif, Bold;
+	font-style: bold;
+	white-space: nowrap;
+	}
+	p{
+	position: absolute;
+	width: 539px;
+	height: 415px;
+	left: 105px;
+	top: 150px;
+	color:#ffff;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+	.pdois{
+position: absolute;
+width: 84px;
+height: 30px;
+left:140px;
+top: 330px;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-size: 28px;
+line-height: normal;
+color: #fff;
+z-index:0;
+font-weight: bold;
+}
+.biografia{
+	position: absolute;
+width: 255px;
+height: 43px;
+left: 560px;
+top: 1800px;
+text-align: center;
+white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: normal;
+color: #ffff;
+}
+.musicaaas{
+	position: absolute;
+width: 255px;
+height: 43px;
+left: 560px;
+top: 2250px;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: normal;
+color: #000;
+
+}
+.black{
+	position: absolute;
+width: 1000px;
+left: 190px;
+top: 1900px;
+text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.bk{
+position:absolute;
+width: 150px;
+height: 65px;
+left:100px;
+top: 310px;
+border:5px solid #000000;
+z-index:0;
+	}
+	.bk:hover{
+		background-color: black;
+		width: 150px;
+		height: 65px;
+		color: white;
+	}
+
+	.pricipais{
+		position: absolute;
+width: 255px;
+height: 43px;
+left: 535px;
+top: 780px;
+text-align: center;
+white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: normal;
+color: #000000;
+	}
+/* Rectangle */
+.um{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 138px;
+top: 940px;
+background: url(../img/album2.png);
+
+}
+.dois{
+	position: absolute;
+width: 364px;
+height: 364px;
+left: 501px;
+top: 940px;
+background: url(../img/album1.png);
+}
+.tres{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 865px;
+top: 940px;
+background: url(../img/album3.png);
+}
+.quatro{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 138px;
+top: 1304px;
+background: url(../img/album4.png);
+}
+.cinco{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 501px;
+top: 1304px;
+background: url(../img/album5.png);
+}
+.seis{
+position:absolute;
+width: 363px;
+height: 364px;
+left: 865px;
+top: 1304px;
+background: url(../img/album6.png);
+}
+.text:hover{
+	opacity: 1;
+}
+.text {
+	color: white;
+
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+	font-family: 'Montserrat', sans-serif, Bold;
+  	opacity: 0;
+  }
+  .overlay {
+	position: relative;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  transition: .5s ease;
+                  background-color: #000;
+                }
+
+.um:hover .overlay {
+        opacity: 0.8;
+    }
+	.dois:hover .overlay {
+        opacity: 0.8;
+    }
+	.tres:hover .overlay {
+        opacity: 0.8;
+    }
+	.quatro:hover .overlay {
+        opacity: 0.8;
+	}
+
+	.cinco:hover .overlay {
+        opacity: 0.8;
+	}
+
+	.seis:hover .overlay {
+        opacity: 0.8;
+    }
+	.musica1{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 138px;
+bottom: 140px;
+	}
+	.musica2{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 501px;
+bottom: 140px;
+	}
+	.musica3{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 864px;
+bottom: 140px;
+	}
+	
+@media only screen and (max-device-width: 640px){
+	.musica1{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 300px;
+bottom: 1000px;
+	}
+	.musica2{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 300px;
+bottom:635px;
+	}
+	.musica3{
+		position:absolute;
+width: 363px;
+height: 364px;
+left: 300px;
+bottom: 275px;
+	}
+	.um{
+		position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 700px;
+background-size: cover;
+	background-repeat: no-repeat;
+	}
+}
+@media only screen and (max-device-width: 640px){
+	.dois{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 1200px;
+background-size: cover;
+	background-repeat: no-repeat;
+	}
+	.tres{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 1200px;
+background-size: cover;
+	background-repeat: no-repeat;
+}
+.quatro{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 2200px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.cinco{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 2700px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.seis{
+position: absolute;
+width: 500px;
+height: 500px;
+left: 250px;
+top: 3200px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+	.pricipais{
+		white-space: nowrap;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+margin-top: -160px;
+left: 35%;
+	}
+	.banner2{
+		background-color: #ffff;
+		width: 100%;
+		height: 3000px;
+	}
+	.banner3{
+		background-color: #000;
+		width: 100%;
+		height: 600px;
+		margin: 0;
+		margin-top:800px;
+	}
+	.banner4{
+		background-color: #fff;
+		width: 100%;
+		height: 700px;
+		margin: 0;
+		margin-top:800px;
+	}
+	.black{
+	position: absolute;
+width: 500px;
+
+left: 250px;
+top: 3900px;
+text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.biografia{
+	top: 3800px;
+	left: 360px;
+}
+.musicaaas{
+	top: 4400px;
+	left: 360px;
+}
+
+	.text:hover{
+	opacity: 1;
+}
+h1{
+	font-size: 80px;
+	top:140px;
+}
+.text {
+	color: white;
+
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+	font-family: 'Montserrat', sans-serif, Bold;
+  	opacity: 0;
+  }
+  .overlay {
+	position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  transition: .5s ease;
+                  background-color: #000;
+                }
+
+.um:hover .overlay {
+        opacity: 0.8;
+    }
+	.dois:hover .overlay {
+        opacity: 0.8;
+    }
+	.tres:hover .overlay {
+        opacity: 0.8;
+    }
+	.tres{
+		position: absolute;
+	
+width: 500px;
+height: 500px;
+left: 250px;
+top: 1700px;
+background-size: cover;
+	background-repeat: no-repeat;
+    }
+    .twitter{
+        padding-left: 15px;
+    }
+}
+
+
+@media only screen and (max-device-width: 1360px){
+	
+	}
+
+@media only screen and (max-device-width: 1503px){
+.pricipais{
+	margin-top: 860px;
+}
+
+footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#000;
+   color: white;
+	 text-align: center;
+	 top: 1000;
+	 height: 50px;;
+}
+.insta{
+	position:absolute;
+	width: 30px;
+	bottom:14px;
+	left: 42%;
+}
+.twitter{
+	position:absolute;
+	width: 30px;
+	bottom:14px;
+	left: 45%;
+}
